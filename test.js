@@ -1,0 +1,31 @@
+const somme = () => { }
+
+/**
+ * somme : nbr1:number,nbr2:number,nbr3:number ->number
+ * cas 1:normal : 2,3,5 -> 10
+ * cas 2:non normal : propager une erreur (avec le bon message)
+ * ->2.1 argument qui manque
+ * ->2.2 valeur non number(NAN)
+ */
+
+test_somme_cas_normal();
+
+function test_somme_cas_normal() {
+    //Arange
+    let nbr1 = 2;
+    let nbr2 = 3;
+    let nbr3 = 14;
+    const resultatAttendu = nbr1 + nbr2 + nbr3;
+
+    //Act
+    const resultatObtenu = somme(nbr1, nbr2, nbr3);
+
+    //Assert
+    if(resultatAttendu === resultatObtenu){
+        console.log('PASSED.........ok...ok');
+    }else{
+        console.log("FAILED...............")
+    }
+
+
+}
