@@ -29,3 +29,9 @@ function test_somme_cas_normal() {
 
 
 }
+
+function test_somme_cas_non__normal(){
+
+    
+
+}
