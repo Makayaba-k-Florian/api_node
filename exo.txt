@@ -1,0 +1,29 @@
+
+test_analyse_file.js
+analyse_file.js
+
+reflexion.txt
+
+
+
+fonction:
+
+--sous fonction
+name:getStats
+name:getPhraseCount
+name:getWorldCount
+name:getChunkCount
+
+--Principale fonction
+name:analyseFile:
+    -in: Le nom d'un fichier test (uniquement txt)
+    -out:
+        -size (ko)
+        -uid
+        -gid
+        -le nombre de phrase
+        -le nombre de mots
+        -le nombre de lettres
+        -le nombre de chunk
+    si vouz voulez creer d'autre sous fonction.
+
