@@ -56,19 +56,24 @@ async function afficher_les_statistiques_un_fichier() {
 
 lire_fichier_en_stream()
 function lire_fichier_en_stream(){
-    const flux_lecture = createReadStream('./files/fichier1.txt','ascii');
+    const flux_lecture = createReadStream('./files/fichier1.txt','utf-8');
     //log(flux_lecture)
     let message_complet ;
+    let compteur = 0;
     flux_lecture.on('data',(chunk) => {
         log("============================================\n");
         message_complet += chunk
         log("============================================\n")
+        compteur++;
     })
 
     flux_lecture.on('end',()=>{
         log("fin du flux ............................")
-        log(message_complet)
+        //log(message_complet)
+        log("Nombre de chunks lus: " + compteur)
     })
+
+    
 
 
 

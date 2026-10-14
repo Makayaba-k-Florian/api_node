@@ -25,5 +25,5 @@ name:analyseFile:
         -le nombre de mots
         -le nombre de lettres
         -le nombre de chunk
-    si vouz voulez creer d'autre sous fonction.
+     creer les sous fonction.
 
